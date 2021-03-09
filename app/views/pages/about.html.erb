@@ -1,0 +1,78 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3 text-center">
+		<span class="pic-main" id="main-picture">
+			<%= image_tag("mun.jpg", class: "img-circle img-responsive img-thumbnail") %>	
+		</span>
+		
+		<p id="about-text" class="well">
+			This is <strong>MUNIR</strong>. <br>
+			| A Ruby on Rails developer | <br>
+			| Full Stack Web Developer | <br>
+			| based in London | <br>
+		</p>	
+		<p class="well">
+				I tried with many programming languages since <br>
+				I started learning and working with code like <br>
+				C#, PHP, Java, CA-Clipper, Visual Basic <br>
+				but stopped at one finally Ruby on Rails. <br>
+				The most enjoyable one to work <br>
+		</p>
+		<p class="well">
+			| an IT Enthusiast | <br>
+			| I love coding functional web apps | <br>
+			| Coding is my passion & hobby |
+		</p>
+
+
+	</div>
+</div>
+
+<div>
+	<div id="social-icons-div">
+		<ul id="social-icons">
+			<li class="social-icon first-social-icon"><a href="https://www.facebook.com/munir.uddin.167" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		    <li class="social-icon"><a href="https://www.linkedin.com/in/mohammad-munir-uddin-96767018?trk=nav_responsive_tab_profile_pic" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+		    <li class="social-icon"><a href="https://github.com/Muncoder" target="_blank"><i class="fa fa-github"></i></a></li>
+		    <li class="social-icon"><a href="https://twitter.com/munirchittagong" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		    <li class="social-icon"><a href="https://plus.google.com/u/0/116388348175147661994/posts" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+		    <li class="social-icon"><a href="mailto:munirchittagong@yahoo.com?Subject=Hi, contacting from your website"><i class="fa fa-envelope-o"></i></a></li>
+		</ul>
+	</div>
+
+</div>
+
+<script>
+	$(document).ready(function(){
+		//$('#main-picture').addClass('animated rubberBand');
+		/*	$('#main-picture').mouseover(function(){
+				$(this).removeClass('animated rubberBand')
+				$(this).addClass('animated flip')
+			});
+			$('#main-picture').mouseout(function(){
+				$(this).removeClass('animated flip')
+				$(this).addClass('animated rubberBand')
+			});
+		*/	//---------------------------------------------------------------------
+
+		$('#about-text').addClass('animated bounceInRight');
+		$('#exp-text').addClass('animated bounceInLeft');
+
+		//---------------------------------------------------------------------
+
+		$('#social-icons').addClass('animated rollIn');
+
+		//---------------------------------------------------------------------
+
+		$('.social-icon').mouseover(function(){
+			$(this).removeClass('animated swing')
+			$(this).addClass('animated flip')
+		});
+		$('.social-icon').mouseout(function(){
+			$(this).removeClass('animated flip')
+			$(this).addClass('animated swing')
+		});
+
+	})
+
+</script>
+

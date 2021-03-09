@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code4launch</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+	
+</head>
+<body>
+
+	<header>
+		<%= render "shared/header" %>
+	</header>
+
+	<main>
+		<div class="container" style="margin-top: 50px;">
+
+			<% flash.each do |name, msg| %>
+				<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+			<% end %>
+
+
+			<%= yield %>	
+		</div>
+	</main>
+
+	<footer>
+		<%= render "shared/footer" %>
+	</footer>
+
+</body>
+
+</html>

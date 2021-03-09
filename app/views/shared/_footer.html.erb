@@ -1,0 +1,48 @@
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-4 developer">
+				<div class="footer-position">
+					<span class="footer-image">
+						<%= image_tag("mun.jpg", class: "img-responsive img-circle img-thumbnail") %>
+					</span>
+					<p>
+						Munir <br>
+						Ruby on Rails Developer <br>
+						Full Stack Web Developer <br>
+						Based in London
+					</p>
+				</div>
+			</div>
+			<div class="col-md-5 footer-links">
+				<ul>
+					<li>
+						<%= link_to projects_path do %>
+							View my all <br>
+							Ruby on Rails Projects <br>
+						<% end %>
+					</li>
+					<li>
+						<%= link_to new_contact_path do %>
+							Send me Messages <br>
+							Contact With Me <br>
+						<% end %>
+					</li>
+					<li>
+						<%= link_to root_path do %>
+							My Bitbucket Repository <br>
+							Only for Employeer <br>
+						<% end %>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-1">
+			</div>
+		</div>
+	</div>
+</div>
+<div id="copyright">
+	&copy Code4Launch, 2016. All rights reserved
+</div>

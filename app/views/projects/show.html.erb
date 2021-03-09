@@ -1,0 +1,43 @@
+<h1><%= @project.name %></h1>
+
+<div class="panel panel-default project-shadow" id="project_show">
+    <div class="panel-image hide-panel-body">
+    	<%= image_tag @project.image.url(:medium), class: "project-show-image image-center" %>
+    </div>
+    <div class="panel-body">
+		
+		<p>
+			<%= @project.content %>
+		</p>
+
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Technology Used</h3>
+		  </div>
+		  <div class="panel-body">
+		    <%= @project.technology %>
+		  </div>
+		</div>
+
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">How This Appplication Works</h3>
+		  </div>
+		  <div class="panel-body">
+		    <%= @project.app_how %>
+		  </div>
+		</div>
+
+    </div>
+    <div class="panel-footer view-link" style="padding-top:10px;padding-bottom:10px">
+    	<%= link_to "All Projects", :back, class: "btn btn-success btn-lg" %>
+
+		<% if !@project.url.blank? %>
+			<%= link_to @project.url, :target => "_blank" do %>
+				<span class="btn btn-info btn-lg pull-right"> Launch this App </span>
+			<% end %>
+		<% else %>
+			<span class="label label-default label-lg label-block pull-right"> App will live soon </span>
+		<% end %>
+    </div>
+</div>

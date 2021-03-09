@@ -1,0 +1,449 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "font-awesome";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+$nprogress-color: #205d7a;
+$nprogress-height: 20px;
+$nprogress-zindex: 10100;
+
+@import 'nprogress';
+@import 'nprogress-bootstrap';
+
+
+body {
+	padding-top: 80px;
+}
+
+
+.nav {
+	margin-top: 18px;
+}
+
+.navbar {
+	min-height: 90px;
+	margin-bottom: 0 !important;
+}
+
+.navbar-brand {
+	height: auto;
+	padding-top: 15px;
+	margin: 0;
+}
+
+.navbar-nav {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-nav li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.navbar-nav > li > a {
+	padding: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+.navbar-nav > li > a span {
+	margin: 5px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+	display: block;
+	font-weight: normal;
+	font-family: Arial;
+	text-transform: none;
+}
+
+.navbar-nav a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	/*background: #0383c0 !important;*/
+
+background: #4B79A1; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4B79A1 , #283E51); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+	color: #fff !important;
+}
+
+#about-text {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.pic-main img {
+	width: 200px;
+	height: 200px;
+}
+
+.exp-text {
+	padding: 10px;
+}
+
+.navbar-brand img {
+	width: 200px;
+	height: 60px;
+}
+
+/* ================================================================
+*  Social Icons
+* =================================================================
+*/
+
+
+#social-icons {
+	list-style-type: none;
+}
+
+#social-icons li {
+	float: left;
+	margin-right: 5px;
+    text-align: center;
+}
+
+#social-icons li a i {
+    background: #205D7A;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15%;
+    transition: all 0.2s ease-in-out;
+}
+
+#social-icons li a i:hover {
+    opacity: .7;
+}
+
+.skills-heading {
+	font-family: 'Oswald', sans-serif;
+}
+
+.skill-text {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+#contact-form ul{
+	list-style-type: none;
+}
+
+
+
+#contact-social-icons {
+	list-style-type: none;
+	padding: 0px;
+}
+
+#contact-social-icons li {
+	margin-bottom: 2px;
+}
+
+#contact-social-icons li a {
+	color: #fff;
+}
+
+.social-link > .social-icon i{
+	width: 40px;
+	height: 40px;
+    background: #205D7A;
+    color: #fff;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.social-link > li{
+	float: left;
+}
+
+.social-text {
+	margin-left: 1px;
+	font-size: 11px;
+}
+
+#social-icons-div {
+	width: 250px;
+	height: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#contact-info {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+/* ================================================================
+*  Hire page
+* =================================================================
+*/
+.hire-person img {
+	display: block;
+	width: 130px;
+	height: 130px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hire-heading {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-family: 'Cuprum', sans-serif;
+	color: #fff;
+
+	background: #606c88; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #606c88 , #3f4c6b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #606c88 , #3f4c6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+.service-expertise {
+	background: #ff0084; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ff0084 , #33001b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ff0084 , #33001b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+}
+
+.hire-me {
+	font-family: 'Shadows Into Light', cursive;
+}
+
+
+.hires ul{
+	list-style-type: none;
+}
+
+.hires ul li{
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-family: 'Economica', sans-serif;
+
+}
+
+#hire-page{
+	background: #8e9eab; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+
+}
+
+
+/* ================================================================
+*  Fix CSS after active_admin installation
+* =================================================================
+*/
+
+a, a:link, a:visited {
+  color:#38678B;
+  text-decoration:none;
+}
+
+ul, ol {
+  margin:0 0 0 0;
+  padding-left:1.5em;
+}
+
+
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="number"], form input[type="url"], form input[type="tel"], form input[type="date"], form textarea {
+  width:100%;
+}
+
+
+/* ================================================================
+*  Link color fix created by active_admin
+* =================================================================
+*/
+/*a, a:link, a:visited {
+  color: #fff;
+}
+*/
+
+/* ================================================================
+*  Project index page box shadow
+* =================================================================
+*/
+.panel-image img.panel-image-preview {
+    width: 100%;
+    height: 200px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.view-link {
+	height: 40px;
+}
+
+.project-shadow {
+-webkit-box-shadow: 12px -10px 7px -8px rgba(134,158,156,0.45);
+-moz-box-shadow: 12px -10px 7px -8px rgba(134,158,156,0.45);
+box-shadow: 12px -10px 7px -8px rgba(134,158,156,0.45);
+}
+
+.project-shadow:hover {
+	-webkit-box-shadow: 12px -10px 7px -8px rgba(150,191,227,1);
+	-moz-box-shadow: 12px -10px 7px -8px rgba(150,191,227,1);
+	box-shadow: 12px -10px 7px -8px rgba(150,191,227,1);
+}
+
+
+.project-details-height {
+	height: 180px;
+}
+
+
+/* ================================================================
+*  Project show
+* =================================================================
+*/
+.project-show-image {
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 200px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+#project_show .panel-body {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+
+/* ================================================================
+*  Footer
+* =================================================================
+*/
+#contact-form textarea.form-control {
+	height: 155px;
+}
+
+
+/* ================================================================
+*  Footer
+* =================================================================
+*/
+#footer {
+	position: static;
+	border-top: solid 5px #4B79A1;
+	margin-top: 80px;
+
+	background: #4b6cb7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #fff;        
+
+}
+
+#footer .footer-image{
+	text-align: right;
+}
+
+#footer .footer-image img{
+	width: 100px;
+	height: 100px;
+}
+
+#footer .developer {
+	padding-top: 10px;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.footer-links a{
+	display: block;
+	color: #fff;
+	width: 200px;
+}
+
+.footer-links ul{
+	list-style-type: none;
+}
+
+.footer-links ul li{
+	text-align: center;
+	width: 200px;
+	height: 50px;
+	padding: 5px;
+	margin-bottom: 4px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+
+	background: #D31027; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #D31027 , #EA384D); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footer-links ul li:HOVER{
+	border: 1px solid black;
+}
+
+
+.footer-position {
+	position: relative;
+	padding: 0 0 0 125px;
+}
+
+.footer-position img {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+
+
+#copyright {
+	color: #FFFFFF;
+	height: 35px;
+	padding-top: 5px;
+	text-align:center;
+	width: 100%;
+
+	border-top: 1px solid #4B79A1;
+
+	background: #4b6cb7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ================================================================
+*  Media queries
+* =================================================================
+*/
+
+@media only screen and (max-device-width: 480px) {
+	body {
+		padding-top: 150px;
+	}
+}
