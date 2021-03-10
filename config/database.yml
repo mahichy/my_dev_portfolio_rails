@@ -3,22 +3,22 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   username: postgres
-  password: oshim027
+#  password: oshim027
 
 development:
   <<: *default
-  database: c4I_app_development
+  database: c4l_app_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: c4I_app_test
+  database: c4l_app_test
 
 production:
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  database: c4I_app_production
+  database: c4l_app_production
 

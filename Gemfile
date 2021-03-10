@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.5.7'
 
 gem 'rails', '5.2.4'
 gem 'pg'
@@ -24,10 +24,10 @@ gem 'active_skin', '~> 0.0.12'
 
 gem 'paperclip'
 
-gem 'active_admin-sortable_tree', '~> 0.2.1'
+gem 'active_admin-sortable_tree', '~> 2.1.0'
 
-gem 'figaro', '~> 1.1', '>= 1.1.1'
-gem "paperclip-dropbox"
+# gem 'figaro', '~> 1.1', '>= 1.1.1'
+# gem "paperclip-dropbox"
 
 gem 'lazyload-rails'
 
@@ -35,10 +35,9 @@ gem 'jquery-turbolinks'
 
 gem 'nprogress-rails'
 
-
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console'
   gem 'spring'
 end
 
