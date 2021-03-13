@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 class DeviseCreateAdminUsers < ActiveRecord::Migration[4.2]
+=======
+class DeviseCreateAdminUsers < ActiveRecord::Migration[5.1]
+>>>>>>> fix_upgraded_to_rails_5
   def change
     create_table :admin_users do |t|
       ## Database authenticatable

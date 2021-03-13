@@ -22,5 +22,9 @@ module Code4launch
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # config.active_record.raise_in_transactional_callbacks = true
+<<<<<<< HEAD
+=======
+
+>>>>>>> fix_upgraded_to_rails_5
   end
 end
