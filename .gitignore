@@ -21,3 +21,4 @@
 
 # Ignore file uploaded on localhost
 /public/system
+config/initializers/application_local.rb
