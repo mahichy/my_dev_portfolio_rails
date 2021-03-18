@@ -26,8 +26,8 @@ gem 'paperclip'
 
 gem 'active_admin-sortable_tree', '~> 2.1.0'
 
-# gem 'figaro', '~> 1.1', '>= 1.1.1'
-# gem "paperclip-dropbox"
+ gem 'figaro', '~> 1.1', '>= 1.1.1'
+ gem "paperclip-dropbox"
 
 gem 'lazyload-rails'
 
