@@ -25,7 +25,7 @@ gem 'active_skin', '~> 0.0.12'
 
 gem 'active_admin-sortable_tree', '~> 2.1.0'
 
-
+gem 'carrierwave', '~> 2.0'
 gem 'lazyload-rails'
 
 gem 'jquery-turbolinks'
