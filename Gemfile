@@ -22,12 +22,9 @@ gem 'devise'
 gem 'activeadmin'
 gem 'active_skin', '~> 0.0.12'
 
-gem 'paperclip'
 
 gem 'active_admin-sortable_tree', '~> 2.1.0'
 
- gem 'figaro', '~> 1.1', '>= 1.1.1'
- gem "paperclip-dropbox"
 
 gem 'lazyload-rails'
 
