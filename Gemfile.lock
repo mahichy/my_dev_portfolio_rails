@@ -281,6 +281,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   lazyload-rails
+  mini_magick
   nprogress-rails
   pg
   puma (~> 3.11)
