@@ -17,5 +17,6 @@ class Project < ApplicationRecord
 	# def shortcontent
 	# 	content.length > 130? content[0..130] + "..." : content
 	# end
+	 mount_uploader :image, ImageUploader
 
 end
