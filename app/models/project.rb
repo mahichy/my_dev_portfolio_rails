@@ -10,6 +10,7 @@ class Project < ApplicationRecord
 	# # end
 
   	# validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+	 mount_uploader :image, ImageUploader
 
 	validates :name, presence: true
 	validates :content, presence: true
@@ -17,6 +18,5 @@ class Project < ApplicationRecord
 	def shortcontent
 		content.length > 130? content[0..130] + "..." : content
 	end
-	 mount_uploader :image, ImageUploader
 
 end
