@@ -9,14 +9,14 @@ class Project < ApplicationRecord
 	# 					    :path => ":style/:id_:filename"
 	# # end
 
- #  	validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+  	# validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
-	# validates :name, presence: true
-	# validates :content, presence: true
+	validates :name, presence: true
+	validates :content, presence: true
 
-	# def shortcontent
-	# 	content.length > 130? content[0..130] + "..." : content
-	# end
+	def shortcontent
+		content.length > 130? content[0..130] + "..." : content
+	end
 	 mount_uploader :image, ImageUploader
 
 end
