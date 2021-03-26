@@ -8,7 +8,7 @@
 
 		 			<div class="panel panel-default project-shadow">
 		                <div class="panel-image hide-panel-body">
-		                	<%= image_tag project.image.url(:medium), alt: "It's an image", lazy: true, class: "panel-image-preview" %>
+		                	<%= image_tag project.image.url, alt: "It's an image", lazy: true, class: "panel-image-preview" %>
 		                </div>
 		                <div class="panel-body project-details-height">
 		                    <h3><%= project.name %></h3>
