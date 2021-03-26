@@ -30,7 +30,6 @@ ActiveAdmin.register Project do
 		column :name
 		column :tag
 		column :content
-		column :image_file_name
 		column :url
 
 		actions
@@ -42,7 +41,7 @@ ActiveAdmin.register Project do
 			row :name
 			row :content
 			row :image do
-				project.image? ? image_tag(project.image.url, height: '100') : content_tag(:span, "No photo display")
+				project.image? ? image_tag(project.image_url, height: '100') : content_tag(:span, "No photo display")
 			end
 			row :url
 		end
@@ -52,7 +51,7 @@ ActiveAdmin.register Project do
 		f.inputs do
 			f.input :name
 			f.input :content
-			f.input :image, hint: f.project.image? ? image_tag(project.image.url, height: '100') : content_tag(:span, "Upload JPG/PNG/GIF image")
+			f.input :image, hint: f.project.image? ? image_tag(project.image_url, height: '100') : content_tag(:span, "Upload JPG/PNG/GIF image")
 			f.input :technology
 			f.input :app_how
 			f.input :url
