@@ -40,18 +40,19 @@ ActiveAdmin.register Project do
 		attributes_table do
 			row :name
 			row :content
-			row :image do
-				project.image? ? image_tag(project.image_url, height: '100') : content_tag(:span, "No photo display")
+			row :image do |img|
+ 			 	image_tag img.image.url
 			end
 			row :url
 		end
 	end
 
-	form :html => { :enctype => "multipart/form-data" } do |f|
+	form do |f|
 		f.inputs do
 			f.input :name
 			f.input :content
-			f.input :image, hint: f.project.image? ? image_tag(project.image_url, height: '100') : content_tag(:span, "Upload JPG/PNG/GIF image")
+			# f.input :image, :as => :file, :hint => image_tag(f.object.image_url(:thumb))
+			f.input :image
 			f.input :technology
 			f.input :app_how
 			f.input :url
