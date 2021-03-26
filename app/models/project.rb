@@ -3,13 +3,14 @@ class Project < ApplicationRecord
 	# if Rails.env.development?
 	# 	has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" }
 	# else
-		has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" },
-							:storage => :dropbox,
-						    :dropbox_credentials => Rails.root.join("config/dropbox.yml"),
-						    :path => ":style/:id_:filename"
-	# end
+	# 	has_attached_file :image, styles: { medium: "300x300>", thumb: "100x100>" },
+	# 						:storage => :dropbox,
+	# 					    :dropbox_credentials => Rails.root.join("config/dropbox.yml"),
+	# 					    :path => ":style/:id_:filename"
+	# # end
 
-  	validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+  	# validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+	 mount_uploader :image, ImageUploader
 
 	validates :name, presence: true
 	validates :content, presence: true
